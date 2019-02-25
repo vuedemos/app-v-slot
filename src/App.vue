@@ -1,22 +1,22 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <SlotDemo>
+    <SlotDemo>
       <div class="box">
         <h1>Slot Demo</h1>
         <p>This is slot demo!</p>
       </div>
-    </SlotDemo> -->
+    </SlotDemo>
 
-    <!-- <div class="box">
+    <div class="box">
       <SubmitButton />
       <SubmitButton>保存</SubmitButton>
-    </div> -->
+    </div>
 
-    <!-- <BaseLayout>
+    <BaseLayout>
       <h1 slot="header">我是一个页头</h1>
       <p slot="footer">&copy;w3cplus</p>
-    </BaseLayout> -->
+    </BaseLayout>
 
     <ColorList :items="colors" title="Colors">
       <template scope="color">
@@ -27,17 +27,17 @@
 </template>
 
 <script>
-// import SlotDemo from './components/SlotDemo'
-// import SubmitButton from './components/SubmitButton'
-// import BaseLayout from './components/BaseLayout'
+import SlotDemo from './components/SlotDemo'
+import SubmitButton from './components/SubmitButton'
+import BaseLayout from './components/BaseLayout'
 import ColorList from './components/ColorList'
 
 export default {
   name: 'app',
   components: {
-    // SlotDemo,
-    // SubmitButton
-    // BaseLayout
+    SlotDemo,
+    SubmitButton,
+    BaseLayout,
     ColorList
   },
   data () {
